@@ -1,4 +1,5 @@
 @import './base/base';
+@import './utils/mixins';
 @import './base/normalize';
 @import './base/reset';
 
@@ -14,5 +15,3 @@
 @import './layouts/customer-reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
-
-@import './utils/mixins';
