@@ -1,3 +1,8 @@
+.contacts {
+  background-color: #fff5f6;
+  padding-top: 162px;
+  padding-bottom: 168px;
+}
 .contacts__list {
   display: flex;
   justify-content: center;
@@ -9,4 +14,8 @@
   padding: 53px 43px;
   width: 330px;
   height: 572px;
+  .contacts__list & + & {
+    margin-left: 30px;
+  }
+  width: calc((100%-3 * 30px) / 3);
 }
