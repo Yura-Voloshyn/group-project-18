@@ -5,9 +5,14 @@
   padding-top: 193px;
   padding-bottom: 160px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     padding-top: 102px;
     padding-bottom: 34px;
+  }
+
+  @include pc {
+    padding-top: 171px;
+    padding-bottom: 56px;
   }
 }
 
@@ -15,54 +20,64 @@
   position: relative;
   z-index: 0;
 
-  margin: auto;
-
-  width: 100vw;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     justify-content: space-between;
 
-    width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
+
+  @include pc {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
 }
 
+// ------------------------------------ HERO LEFT PART ----------------------------------
+
 .hero__left-part {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-direction: column;
+
     width: 234px;
+  }
+
+  @include pc {
+    width: 380px;
   }
 }
 
 .page-title {
   width: 218px;
-  margin: 0;
 
   font-family: Titan One;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #ffffff;
 
   margin-bottom: 19px;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: 162px;
     padding-top: 6px;
 
     font-size: 22px;
     line-height: 1.14;
+
+    margin-bottom: 20px;
+  }
+
+  @include pc {
+    width: 277px;
+
+    font-size: 38px;
+    line-height: 1.16;
+
+    margin-bottom: 25px;
   }
 }
 .page-title-accent {
@@ -70,32 +85,42 @@
   line-height: 0.96;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: #d41443;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     font-size: 34px;
     line-height: 0.91;
+  }
+
+  @include pc {
+    font-size: 58px;
+    line-height: 0.9;
   }
 }
 
 .hero__nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
   display: flex;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     margin-bottom: 66px;
+  }
+
+  @include pc {
+    margin-bottom: 112px;
   }
 }
 .hero__nav-item:not(:first-child) {
   margin-left: 8px;
+
+  @include pc {
+    margin-left: 15px;
+  }
 }
 .hero__first-nav-link,
 .hero__second-nav-link {
+  // reset
   text-decoration: none;
+  //   reset
 
   display: flex;
   align-items: center;
@@ -107,6 +132,14 @@
   font-size: 8px;
   line-height: 1.25;
   color: #ffffff;
+
+  @include pc {
+    width: 104px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.28;
+  }
 
   border-radius: 20px;
   background-color: #d41443;
@@ -124,6 +157,10 @@
 }
 .hero__second-nav-link {
   width: 83px;
+
+  @include pc {
+    width: 138px;
+  }
 
   color: #d41443;
 
@@ -144,33 +181,44 @@
 .hero__add-info {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
     width: 114px;
     align-self: flex-end;
   }
+
+  @include pc {
+    width: 200px;
+  }
 }
 .hero__text {
-  margin: 0;
-
   font-family: DM Sans;
   font-size: 8px;
   line-height: 1.5;
-
   color: #ffffff;
 
   margin-bottom: 7px;
+
+  @include pc {
+    font-size: 14px;
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+  }
 }
 .hero__btn {
   display: flex;
   justify-content: center;
   align-items: center;
 
+  // reset
   padding: 0;
   border: none;
+  background-color: transparent;
+  // reset
+
   border-radius: 50%;
   outline: 1px solid transparent;
-  background-color: transparent;
 
   transition: outline 250ms linear;
 
@@ -184,19 +232,21 @@
 .hero__btn-icon {
   width: 18px;
   height: 18px;
+
+  @include pc {
+    width: 26px;
+    height: 26px;
+  }
 }
+
+// ------------------------------------ HERO RIGHT PART -----------------------------------
 
 .hero__right-part {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
   }
-}
-.hero__stat-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 .hero__stat-item {
   display: flex;
@@ -205,17 +255,26 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
+
+  @include pc {
+    margin-bottom: 18px;
+  }
 }
 .hero__stat-number {
   position: relative;
+
   font-family: Titan One;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-align: right;
   text-transform: uppercase;
-
   color: #d41443;
+
+  @include pc {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 
   &::after {
     position: absolute;
@@ -228,6 +287,14 @@
     height: 16px;
     border-radius: 50%;
     background-color: #ffffff;
+
+    @include pc {
+      top: -5px;
+      right: -16px;
+
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 .hero__stat-text {
@@ -235,30 +302,44 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
-
   color: #ffffff;
+
+  @include pc {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
-.hero__img-1 {
-  width: 171px;
-  height: 410px;
+// ---------------------------------------- HERO IMAGES ---------------------------------------
 
+.hero__img-1 {
   position: absolute;
   bottom: -160px;
   left: calc(11.25vw * 2 - 36px + 81px);
+  z-index: -1;
 
-  @media screen and (min-width: 480px) {
+  width: 171px;
+  height: 410px;
+
+  @include tel {
     left: 153px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     left: 378px;
     bottom: -34px;
 
     width: 143px;
     height: 336px;
   }
-  z-index: -1;
+
+  @include pc {
+    left: 594px;
+    bottom: -56px;
+
+    width: 236px;
+    height: 557px;
+  }
 }
 .circle {
   position: absolute;
@@ -271,43 +352,70 @@
   border-radius: 50%;
   background-color: #ffa5ba;
 
-  @media screen and (min-width: 480px) {
+  @include tel {
     left: 72px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     left: 307px;
     bottom: 12px;
 
     width: 324px;
     height: 322px;
   }
+
+  @include pc {
+    left: 475px;
+    bottom: 19px;
+
+    width: 538px;
+    height: 538px;
+  }
 }
 
 .hero__img-2 {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
-    width: 124px;
-    height: 126px;
+
     position: absolute;
     bottom: -6px;
     left: 34px;
     z-index: -1;
+
+    width: 124px;
+    height: 126px;
+  }
+
+  @include pc {
+    bottom: -11px;
+    left: 77px;
+
+    width: 188px;
+    height: 191px;
   }
 }
 .hero__img-3 {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
 
-    width: 168px;
-    height: 133px;
     position: absolute;
     bottom: -34px;
     right: 34px;
     z-index: -1;
+
+    width: 168px;
+    height: 133px;
+  }
+
+  @include pc {
+    bottom: -56px;
+    right: 109px;
+
+    width: 293px;
+    height: 232px;
   }
 }
