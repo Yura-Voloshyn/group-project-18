@@ -136,6 +136,8 @@
   list-style: none;
 }
 .contacts-social {
+  display: flex;
+  flex-direction: column;
   padding-top: 25px;
 }
 .contacts-social__tel,
@@ -144,4 +146,29 @@
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
+}
+.contacts-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.contacts-btn__pink {
+  width: 161px;
+  height: 44px;
+  background: #d41342;
+  border-radius: 22px;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 10px;
+}
+.contacts-btn__white {
+  width: 161px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  color: #d41443;
+  border: none;
 }
