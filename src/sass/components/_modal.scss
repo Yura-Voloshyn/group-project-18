@@ -21,14 +21,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @include small {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
   width: 90vw;
-  height: 100vh;
+  height: 90vh;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,12 +31,17 @@
 
   @include tel {
     width: 450px;
-    height: 609px;
+    min-height: 609px;
+  }
+
+  @include tab {
+    width: 500px;
+    min-height: 600px;
   }
 
   @include pc {
-    width: 528px;
-    height: 581px;
+    width: 600px;
+    height: 700px;
   }
 }
 .buttonClose {
@@ -50,29 +50,27 @@
   top: 2%;
   min-width: 30px;
   min-height: 30px;
-  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
+  background-color: #e17992;
+  color: #ffffff;
   padding: 6px;
   margin: 0;
   display: flex;
   justify-content: center;
-
-  &:hover,
-  &:focus {
-    fill: #D41443;
+  &:hover {
+    color: #e17992;
+    background-color: #ffffff;
   }
 }
+
 .buttonClose__icon {
-  position: absolute;
-  display: flex;
-  align-items: center;
+  stroke: currentColor;
 }
 // -----------------------------
 .modalContainer {
-  padding: 40px;
+  padding: 50px 40px;
 }
 .modal__preTitle {
   padding-bottom: 33px;
@@ -81,7 +79,6 @@
   line-height: 1.62;
 
   color: #000000;
-  text-align: center;
 
   @include tab {
     padding-bottom: 32px;
@@ -112,4 +109,13 @@
     line-height: 1.94;
     letter-spacing: 0.04em;
   }
+}
+
+.modal__img {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  padding-bottom: 30px;
+  width: 180px;
+  height: 190px;
 }
