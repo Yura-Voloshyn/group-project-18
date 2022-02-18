@@ -19,7 +19,7 @@
   }
   width: calc((100%-3 * 30px) / 3);
   margin: 0 auto;
-  @mixin small {
+  @include small {
     width: 100%;
   }
   .container {
@@ -44,7 +44,7 @@
   }
 }
 .grid__item {
-  @mixin small {
+  @include small {
     width: 100%;
   }
   background: #ffffff;
@@ -78,7 +78,7 @@
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  @mixin tab {
+  @include tab {
     font-size: 16px;
     padding: 6px 12px;
   }
