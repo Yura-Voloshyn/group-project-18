@@ -1,3 +1,4 @@
+// ----------------MAIN---------------------- //
 .container__products {
   padding-top: 115px;
   padding-bottom: 98px;
@@ -16,6 +17,8 @@
     padding-left: 113px;
   }
 }
+
+// -------------Header Part----------------- //
 .products__main-header {
   font-family: Titan One;
   font-size: 34px;
@@ -47,6 +50,8 @@
     }
   }
 }
+
+// ------------------ Product Cards ------------------ //
 .products-block {
   display: flex;
   flex-direction: column;
@@ -98,6 +103,7 @@
     height: 525px;
   }
 
+  // -----------------Dote------------- //
   &::after {
     display: flex;
     position: absolute;
@@ -114,9 +120,10 @@
     @include pc {
       top: 230px;
     }
+    //  -------------------------------- //
   }
 }
-
+// ------------ Decorative Pictures --------------- //
 .products-card--bg {
   &-pink {
     background-color: $cl-card1;
@@ -127,7 +134,7 @@
       width: 250px;
       height: 250px;
       top: -113px;
-      left: 5%;
+      left: 7%;
       background-image: url(./../images/mobile/ice-cream@2x.png);
       background-repeat: no-repeat;
       background-size: contain;
@@ -154,7 +161,7 @@
       width: 250px;
       height: 250px;
       top: -113px;
-      left: 5%;
+      left: 7%;
       background-image: url(./../images/mobile/ice-coffe@2x.png);
       background-repeat: no-repeat;
       background-size: contain;
@@ -182,7 +189,7 @@
       width: 250px;
       height: 250px;
       top: -113px;
-      left: 5%;
+      left: 7%;
       background-image: url(./../images/mobile/milkshakes@2x.png);
       background-repeat: no-repeat;
       background-size: contain;
@@ -200,7 +207,9 @@
     }
   }
 }
+// ---------------------------------------------------------------- //
 
+//  -------------------- Inside Product Cards --------------------- //
 .products-card__header--text {
   display: block;
 
@@ -256,3 +265,4 @@
     height: 40px;
   }
 }
+// ---------------------------------------------------------------- //
