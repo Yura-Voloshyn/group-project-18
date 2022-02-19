@@ -25,6 +25,8 @@
 }
 
 .products-card {
+  display: flex;
+  flex-direction: column;
   position: relative;
   height: 485px;
   width: 280px;
