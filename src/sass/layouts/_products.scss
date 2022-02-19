@@ -42,6 +42,17 @@
   &__item {
     margin-bottom: 30px;
   }
+
+  &::after {
+    display: flex;
+    position: absolute;
+    content: '';
+    top: 220px;
+    left: 45%;
+    background-image: url(./../images/dotes@2x-min.png);
+    width: 26px;
+    height: 6px;
+  }
 }
 
 .products-card--bg {
@@ -102,7 +113,7 @@
   text-align: center;
 }
 .products-card__dote {
-  font-weight: bold;
+  color: transparent;
 }
 .products-card__description {
   font-weight: bold;
