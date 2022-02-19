@@ -1,7 +1,17 @@
-.contacts {
+// .contacts {
+//   padding-top: 84px;
+//   background-color: #ffffff;
+//   position: relative;
+// }
+.background {
   background-color: #fff5f6;
+  background-image: url(../images/pc/contact-background@1x.png);
+  background-repeat: no-repeat;
 }
-
+// .contacts__container {
+//   position: absolute;
+//   top: -84px;
+// }
 .grid {
   display: flex;
   flex-wrap: wrap;
