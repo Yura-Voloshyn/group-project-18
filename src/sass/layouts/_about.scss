@@ -1,7 +1,8 @@
 .about__section {
   position: relative;
   padding-top: 125px;
-  overflow: hidden;
+  z-index: -2;
+  // overflow: hidden;
   background-color: $cl-section;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -9,8 +10,9 @@
   }
 }
 
-.about__section::before {
+.about__section::after {
   content: '';
+  z-index: -1;
   position: absolute;
   display: inline-block;
   margin: 0 auto;
@@ -22,7 +24,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // transform: translateY(-61px);
     background-image: url(../images/mobile/milk@1x.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -67,44 +68,30 @@
 
 .about__pre-title {
   margin-bottom: 15px;
-
-  font-family: 'Titan One', cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.17;
+  @include font-design(Titan One, normal, 400, 18px, 1.17);
 
   text-align: center;
   text-transform: uppercase;
-
   color: $cl-primary;
 
   @include tab {
     margin-bottom: 16px;
-    font-size: 26px;
-    line-height: 1.15;
+    @include font-design(Titan One, normal, 400, 26px, 1.15);
   }
 
   @include pc {
     margin-bottom: 15px;
-    font-size: 30px;
-    line-height: 1.13;
+    @include font-design(Titan One, normal, 400, 30px, 1.13);
   }
 }
 
 .about__title {
   margin: auto;
   margin-bottom: 26px;
+  @include font-design(Titan One, normal, 400, 34px, 1.15, 0.04em);
 
-  font-family: 'Titan One', cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-
   color: $cl-accent;
 
   @media screen and (max-width: 767px) {
@@ -113,14 +100,12 @@
 
   @include tab {
     margin-bottom: 50px;
-    font-size: 48px;
-    line-height: 1.14;
+    @include font-design(Titan One, normal, 400, 48px, 1.14, 0.04em);
   }
 
   @include pc {
     margin-bottom: 55px;
-    font-size: 58px;
-    letter-spacing: 0.06em;
+    @include font-design(Titan One, normal, 400, 58px, 1.14, 0.06em);
   }
 }
 
@@ -147,7 +132,6 @@
   @include pc {
     height: 516px;
     margin-right: 74px;
-    // padding-bottom: 65px;
     flex-basis: calc((100% - 74px) / 2);
   }
 }
@@ -191,20 +175,15 @@
 }
 
 .about__text {
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58;
+  @include font-design(DM Sans, normal, 500, 12px, 1.62);
 
   color: $cl-text;
 
   @include tab {
-    font-size: 14px;
-    line-height: 1.79;
+    @include font-design(DM Sans, normal, 500, 14px, 1.76, 0.04em);
   }
   @include pc {
-    line-height: 1.92;
+    @include font-design(DM Sans, normal, 500, 14px, 1.94, 0.04em);
   }
 }
 
@@ -212,8 +191,7 @@
   color: $cl-h-text;
 
   @include pc {
-    font-size: 16px;
-    line-height: 1.75;
+    @include font-design(DM Sans, normal, 500, 16px, 1.76, 0.04em);
   }
 }
 
@@ -221,26 +199,21 @@
   padding: 0;
   min-width: 176px;
   height: 44px;
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.29;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: currentColor;
-  color: $cl-accent;
   cursor: pointer;
+  @include font-design(DM Sans, normal, 700, 14px, 1.29);
+
   border-radius: 22px;
   border: transparent;
-
+  fill: currentColor;
+  color: $cl-accent;
   background-color: $cl-white-primary;
-
   transition: background-color 250ms linear;
+
   @include tab {
-    font-size: 16px;
-    line-height: 1.31;
+    @include font-design(DM Sans, normal, 700, 16px, 1.31);
   }
 
   &:hover,
