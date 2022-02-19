@@ -1,14 +1,135 @@
 .header {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc((21 / 16) * 100%);
-  // background: #e17992;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
 
-  &__logo {
-    width: 199px;
-    height: 50px;
+  background-color: $cl-section-hero;
+  color: #fff;
+  @include font-design(DM Sans, normal, 700, 16px, 1.28, 0.04em);
+
+  @include small {
+    padding: 6px 20px 0;
+  }
+}
+
+.header__logo {
+  align-items: center;
+  width: 199px;
+  height: 50px;
+}
+
+.mob {
+  &-menu {
+    position: relative;
+    background-color: $cl-section-hero;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 9;
+    padding: 60px 20px 21px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform: translate(0);
 
     @include tab {
+      display: none;
+    }
+
+    &.is-hidden {
+      transform: translate(100%);
     }
   }
+  // .mob-menu__open
+
+  &-menu__open {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    margin-left: auto;
+    display: block;
+    background: transparent;
+    border: none;
+
+    @include tab {
+      display: none;
+    }
+  }
+
+  &-menu__close {
+    cursor: pointer;
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    display: block;
+    margin-left: auto;
+
+    background: transparent;
+    border: none;
+  }
+
+  // .mob-menu__contacts
+
+  &-connects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.mob-nav {
+  &__item {
+    @include font-design(DM Sans, normal, 700, 14px, 1.28, 0.04em);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    color: $cl-white-primary;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $cl-accent;
+    }
+  }
+}
+
+.current-mob {
+  color: $cl-accent;
+}
+
+.btn__buy {
+  display: inline-block;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 19px;
+
+  width: 100%;
+  height: 44px;
+  border-style: none;
+  border-radius: 22px;
+  background-color: $cl-white-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $cl-hover-bg2;
+  }
+
+  &-link {
+    text-decoration: none;
+    @include font-design(DM Sans, normal, 700, 16px, 1.31, 0.04em);
+    color: $cl-accent;
+  }
+}
+.icon-cross {
+  fill: #fff;
 }

@@ -2,21 +2,66 @@
     <div class="container">
         <a href="#">
             <img class="header__logo" src="./images/logo 1logo@1x-min.png" alt="logo site" width="199" height="50">
-            <!-- <svg width="199" height="50">
-                    <use href="./logo.svg"></use>
-                </svg> -->
         </a>
-        <nav>
-            <div class="nav__bar nav__bar_mobile">
-                <ul class="nav__list">
-                    <li class="nav__item">Home</li>
-                    <li class="nav__item">About us</li>
-                    <li class="nav__item">How it’s made?</li>
-                    <li class="nav__item">Our products</li>
-                    <li class="nav__item">Contact</li>
+        <button type="button" class="mob-menu__open" data-mobMenu-open>
+            <svg width="20" height="12" aria-label="відкрити меню">
+                <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-mobMenu>
+            <button type="button" class="mob-menu__close" data-mobMenu-close>
+                <svg width="23" height="23" aria-label="закрити меню">
+                    <use class="icon-cross" href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <div class="mob-nav">
+                <button class="btn__buy" type="button">
+                    <a class="btn__buy-link" href="#">Buy now
+                    </a>
+                </button>
+                <ul class="mob-nav__list list">
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link current-mob" href="/">Home</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link" href="/">About us</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link" href="/">How it’s made?</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link" href="/">Our products</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link" href="/">Our products</a>
+                    </li>
+                    <li class="mob-nav__item">
+                        <a class="link mob-nav__link" href="/">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
-        <button type="button">Buy now</button>
+        </div>
+        <!-- <nav class="nav__bar">
+            <a href="#">
+                <img class="header__logo" src="./images/logo 1logo@1x-min.png" alt="logo site" width="199" height="50">
+            </a>
+
+            <div>
+                <ul class="site-menu">
+                    <li class="nav__item"><a href="/"></a> Home</a></li>
+                    <li class="nav__item"><a href="/"></a> About us</a></li>
+                    <li class="nav__item"><a href="/"></a> How it’s made?</a></li>
+                    <li class="nav__item"><a href="/"></a> Our products</a></li>
+                    <li class="nav__item"><a href="/"></a> Contact</a></li>
+                </ul>
+            </div>
+            <button type="button">Buy now</button>
+        </nav> -->
+        <!-- <div class="burger__icon">
+            <div class="stroke1"></div>
+            <div class="stroke2"></div>
+            <div class="stroke3"></div>
+        </div> -->
+
     </div>
 </header>
