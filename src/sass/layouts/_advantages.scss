@@ -1,7 +1,14 @@
 .advantage__section {
   padding-top: 39px;
-  padding-bottom: 139px;
-  background: #fff5f6;
+  padding-bottom: 97px;
+  background: $cl-section;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 66px;
+    padding-bottom: 140px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 139px;
+  }
 }
 
 .advantages-list {
@@ -46,7 +53,7 @@
   font-style: normal;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $cl-accent;
   @media screen and (max-width: 767px) {
     font-size: 36px;
     line-height: 1.13;
@@ -144,7 +151,7 @@
 
 .advantages-description {
   font-weight: bold;
-  color: #000000;
+  color: $cl-h-text;
   @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1.66;
