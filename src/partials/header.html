@@ -8,6 +8,10 @@
         <div class="mob-nav">
             <button class="btn__buy-mob" type="button">
                 <a class="btn__buy-link" href="#">Buy now
+                    <svg class="btn__buy-icon" width="4" height="8">
+                        <use href="./images/sprite.svg#icon-button-arrow">
+                        </use>
+                    </svg>
                 </a>
             </button>
             <div class="menu__block">
@@ -33,7 +37,11 @@
     </div>
     <div class="container header__section">
         <a href="#">
-            <img class="header__logo" src="./images/logo 1logo@1x-min.png" alt="logo site" width="199" height="50">
+            <picture>
+                <source srcset="./images/logo1logo@1x-min.png 1x, ./images/logo1logo@1x-min.png 2x"
+                    media="(min-width: 320px)" />
+                <img src="./images/logo1logo@1x-min.png" alt="site logo">
+            </picture>
         </a>
         <button type="button" class="mob-menu__open" data-mobMenu-open>
             <svg width="20" height="12" aria-label="відкрити меню">
@@ -61,7 +69,12 @@
                     </li>
                 </ul>
             </div>
-            <button class="btn__buy" type="button"><a class="btn__buy-link" href="#">Buy now</a></button>
+            <button class="btn__buy" type="button"><a class="btn__buy-link" href="#">Buy now
+                    <svg class="btn__buy-icon" width="4" height="8">
+                        <use href="./images/sprite.svg#icon-button-arrow">
+                        </use>
+                    </svg>
+                </a></button>
         </nav>
         <!-- <div class="burger__icon">
             <div class="stroke1"></div>
