@@ -12,7 +12,6 @@
 }
 
 .advantages-list {
-  margin-left: -30px;
   @include tab {
     display: flex;
     flex-wrap: nowrap;
@@ -30,10 +29,6 @@
   @media screen and (min-width: 1280px) {
     max-width: 330px;
   }
-}
-
-.advantages-item {
-  margin-left: 30px;
 }
 
 .advantages-item:not(:last-child) {
