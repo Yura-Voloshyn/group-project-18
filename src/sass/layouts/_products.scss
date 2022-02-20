@@ -1,0 +1,133 @@
+.container__products {
+  padding-top: 115px;
+  padding-bottom: 98px;
+  margin-bottom: -130px;
+  align-items: center;
+  text-align: center;
+}
+.products__main-header {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $cl-accent;
+  margin-bottom: 144px;
+  &-description {
+    margin-bottom: 15px;
+    font-family: Titan One;
+    font-size: 18px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $cl-primary;
+  }
+}
+
+.products-card {
+  position: relative;
+  height: 485px;
+  width: 280px;
+
+  margin-bottom: 130px;
+  padding-top: 161px;
+  padding-bottom: 41px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  color: $cl-white-primary;
+
+  border-radius: 24px;
+
+  &__item {
+    margin-bottom: 30px;
+  }
+}
+
+.products-card--bg {
+  &-pink {
+    background-color: $cl-card1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 250px;
+      height: 250px;
+      top: -113px;
+      left: 5%;
+      background-image: url(./../images/mobile/ice-cream@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &-bezh {
+    background-color: $cl-card2;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 250px;
+      height: 250px;
+      top: -113px;
+      left: 5%;
+      background-image: url(./../images/mobile/ice-coffe@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &-green {
+    background-color: $cl-card3;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 250px;
+      height: 250px;
+      top: -113px;
+      left: 5%;
+      background-image: url(./../images/mobile/milkshakes@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.products-card__header--text {
+  display: block;
+  font-family: Titan One;
+  letter-spacing: 0.04em;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+.products-card__dote {
+  font-weight: bold;
+}
+.products-card__description {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.products-card__btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  border-radius: 50%;
+  outline: none;
+
+  transition: border 250ms linear;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    border: 2px solid #c7133e;
+  }
+
+  &--icon {
+    width: 40px;
+    height: 40px;
+  }
+}
