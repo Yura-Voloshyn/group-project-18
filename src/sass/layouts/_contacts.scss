@@ -100,6 +100,7 @@
 .contacts__city {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
   @include tab {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -115,7 +116,7 @@
   font-size: 12px;
   line-height: 1.87;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $cl-h-text;
   margin-bottom: 10px;
   @include tab {
     font-size: 14px;
@@ -237,6 +238,7 @@
   @include tab {
     flex-direction: row;
     align-items: baseline;
+    padding-top: 81px;
   }
   @include pc {
     padding-top: 86px;
@@ -288,11 +290,4 @@
   &:focus {
     background-color: $cl-hover-bg2;
   }
-}
-
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
 }
