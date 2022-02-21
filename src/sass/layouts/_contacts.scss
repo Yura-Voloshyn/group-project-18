@@ -214,8 +214,8 @@
   &:focus,
   &:hover,
   &:focus {
-    color: #57575f;
-    box-shadow: rgba(0, 0, 0, 0.1);
+    color: rgb(87, 87, 95);
+    text-shadow: 2px 2px 2px rgb(87 87 95 / 30%);
   }
   @include tab {
     font-size: 14px;
