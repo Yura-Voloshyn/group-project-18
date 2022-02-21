@@ -1,4 +1,4 @@
-.contacts {
+.contacts__section {
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
     background-image: linear-gradient(to bottom, #fff 102px, #fff5f6 102px);
   }
 }
-.background {
+.contacts__background {
   @include pc {
     background-image: url(../images/pc/contact-background@1x.png);
     background-repeat: no-repeat;
