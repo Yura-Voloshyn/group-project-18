@@ -1,0 +1,133 @@
+.gallery {
+  padding-bottom: 80px;
+
+  @include tab {
+    padding-bottom: 121px;
+  }
+
+  @include pc {
+    padding-bottom: 123px;
+  }
+
+  background-image: linear-gradient(#fff5f6 30%, #fff 30%);
+}
+
+.gallery__container {
+  @include small {
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @include tel {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include tab {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  @include pc {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+// .js-masonry {
+//   width: 100%;
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, 150px);
+//   grid-auto-flow: row dense;
+//   grid-gap: 1em;
+// }
+
+.masonry__item {
+  padding: 5px;
+}
+.masonry__item--1 {
+  width: 300px;
+  height: 150px;
+}
+.masonry__item--2 {
+  width: 150px;
+  height: 100px;
+}
+.masonry__item--3 {
+  width: 300px;
+  height: 300px;
+}
+.masonry__item--4 {
+  width: 300px;
+  height: 150px;
+}
+.masonry__item--5 {
+  width: 150px;
+  height: 100px;
+}
+.masonry__item--6 {
+  width: 150px;
+  height: 150px;
+}
+.masonry__item--7 {
+  width: 150px;
+  height: 150px;
+}
+.masonry__item--8 {
+  width: 150px;
+  height: 150px;
+}
+.masonry__item--9 {
+  width: 150px;
+  height: 150px;
+}
+.masonry__item--10 {
+  width: 150px;
+  height: 100px;
+}
+.masonry__item--11 {
+  width: 150px;
+  height: 150px;
+}
+
+.masonry__item div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.masonry__item-img-1 {
+  background-image: url(../images/gallery/gallery-1.jpg);
+}
+.masonry__item-img-2 {
+  background-image: url(../images/gallery/gallery-2.jpg);
+}
+.masonry__item-img-3 {
+  background-image: url(../images/gallery/gallery-3.jpg);
+}
+.masonry__item-img-4 {
+  background-image: url(../images/gallery/gallery-4.jfif);
+}
+.masonry__item-img-5 {
+  background-image: url(../images/gallery/gallery-5.jpg);
+}
+.masonry__item-img-6 {
+  background-image: url(../images/gallery/gallery-6.jpg);
+}
+.masonry__item-img-7 {
+  background-image: url(../images/gallery/gallery-7.jpg);
+}
+.masonry__item-img-8 {
+  background-image: url(../images/gallery/gallery-8.jpg);
+}
+.masonry__item-img-9 {
+  background-image: url(../images/gallery/gallery-9.jpg);
+}
+.masonry__item-img-10 {
+  background-image: url(../images/gallery/gallery-10.jpg);
+}
+.masonry__item-img-11 {
+  background-image: url(../images/gallery/gallery-11.jpg);
+}
