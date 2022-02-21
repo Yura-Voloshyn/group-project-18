@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   background-color: #fff5f6;
-  background-image: url(../images/pc/contact-background@1x.png);
+  background-image: url(../images/pc/contact-background@1x.png),
+    linear-gradient(to bottom, #fff 102px, #fff5f6 102px);
   background-repeat: no-repeat;
   background-size: contain;
   @media (min-device-pixel-ratio: 2),
@@ -14,15 +15,15 @@
     background-image: url(../images/pc/contact-background@2x.png);
   }
 }
-.background {
-  transform: translateY(-84px);
-  @include tab {
-    transform: translateY(-78px);
-  }
-  @include pc {
-    transform: translateY(-102px);
-  }
-}
+// .background {
+//   transform: translateY(-84px);
+//   @include tab {
+//     transform: translateY(-78px);
+//   }
+//   @include pc {
+//     transform: translateY(-102px);
+//   }
+// }
 
 .grid {
   display: flex;
