@@ -112,6 +112,8 @@
   &:focus,
   &:active {
     color: $cl-accent;
+    border-radius: 50%;
+    outline-color: $cl-accent;
   }
   .icon-social {
     display: block;
@@ -134,6 +136,9 @@
 }
 .tel-number {
   color: $cl-accent;
+  &:focus {
+    outline-color: $cl-accent;
+  }
 }
 .copyright {
   @include font-design(DM Sans, normal, 700, 14px, 1.52, 0);
