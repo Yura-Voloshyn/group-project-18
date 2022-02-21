@@ -3,6 +3,7 @@
 }
 
 .radio-btn {
+  position: absolute;
   appearance: none;
 }
 
@@ -140,7 +141,7 @@
   justify-content: center;
 }
 .reviews__slide-switcher:not(:first-child) {
-  margin-left: 18px;
+  margin-left: 10px;
 }
 
 .reviews__container
@@ -163,6 +164,13 @@
   pointer-events: none;
 }
 
+.reviews__switcher-icon {
+  padding: 4px;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
 .reviews__active-slide-icon {
   opacity: 0;
   transition: opacity 250ms linear;
