@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(255, 184, 202, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
   opacity: 1;
@@ -23,7 +23,7 @@
   background: $cl-white-primary;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 20px;
   overflow: auto;
   z-index: 9;
   &::before {
@@ -36,9 +36,10 @@
     width: 230px;
     background-repeat: no-repeat;
     left: 10%;
-    top: 10%;
+    top: 0;
     opacity: 0.4;
     z-index: -1;
+    overflow: hidden;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -60,21 +61,23 @@
 }
 .buttonClose-fr {
   position: absolute;
-  right: 2%;
+  right: 3%;
   top: 2%;
   min-width: 30px;
   min-height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  background-color: $cl-menu-bg;
+  background-color: $cl-accent;
   color: $cl-white-primary;
   padding: 6px;
   margin: 0;
   display: flex;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: $cl-menu-bg;
+    color: $cl-accent;
     background-color: $cl-white-primary;
   }
 }
@@ -252,11 +255,19 @@
   letter-spacing: 0.06em;
   color: $cl-white-primary;
   border: none;
-  border-radius: 4px;
+  border-radius: 15px;
   background-color: $cl-accent;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 55px;
+  padding: 7px 55px;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $cl-accent;
+    background-color: $cl-white-primary;
+    border-bottom: 4px solid $cl-accent;
+    border-top: 4px solid $cl-accent;
+  }
 }
