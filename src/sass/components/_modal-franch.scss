@@ -39,6 +39,12 @@
     top: 10%;
     opacity: 0.4;
     z-index: -1;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile/hero-ice@2x.png);
+    }
   }
   @include tel {
     width: 450px;
