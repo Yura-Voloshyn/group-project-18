@@ -1,6 +1,6 @@
-<!-- кнопка срол вгору -->
-<div class="scrollTop" onclick="scrollToTop();"></div>
-<header id="home" class="header">
+<!-- кнопка скрол вгору -->
+<div class="scrollTop" onclick="scrollToTop();"> </div>
+<section id="home" class="header">
     <!-- блок мобільне меню -->
     <div class="mob-menu is-hidden" data-mobMenu>
 
@@ -44,21 +44,29 @@
     </div>
     <!-- шапка сайту -->
     <div class="container header__section">
+        <!-- логотип -->
+        <a href="#" class="header__logo animate__animated animate__bounceIn">
+            <picture>
+                <source srcset="./images/logo1logo@1x-min.png 1x, ./images/logo1logo@2x-min.png 2x"
+                    media="(min-width: 320px)" />
+                <img src="./images/logo1logo@1x-min.png" alt="site logo">
+            </picture>
+        </a>
+        <!-- навігаційна-кнопка купити зараз -->
+        <button class="btn__buy" type="button"><a class="btn__buy-link" href="#">Buy now
+                <svg class="btn__buy-icon" width="4" height="8">
+                    <use href="./images/sprite.svg#icon-button-arrow">
+                    </use>
+                </svg>
+            </a>
+        </button>
+        <!-- кнопка відкривання мобільного меню -->
+        <button type="button" class="mob-menu__open" data-mobMenu-open>
+            <svg width="20" height="12" aria-label="відкрити меню">
+                <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
     </div>
-    <!-- логотип -->
-    <a href="#" class="header__logo animate__animated animate__bounceIn">
-        <picture>
-            <source srcset="./images/logo1logo@1x-min.png 1x, ./images/logo1logo@2x-min.png 2x"
-                media="(min-width: 320px)" />
-            <img src="./images/logo1logo@1x-min.png" alt="site logo">
-        </picture>
-    </a>
-    <!-- кнопка відкривання мобільного меню -->
-    <button type="button" class="mob-menu__open" data-mobMenu-open>
-        <svg width="20" height="12" aria-label="відкрити меню">
-            <use class="icon-menu" href="./images/sprite.svg#icon-burger"></use>
-        </svg>
-    </button>
     <!-- панель навігації  -->
     <nav class="nav">
         <div class="nav__bar">
@@ -80,12 +88,5 @@
                 </li>
             </ul>
         </div>
-        <!-- навігаційна-кнопка купити зараз -->
-        <button class="btn__buy" type="button"><a class="btn__buy-link" href="#">Buy now
-                <svg class="btn__buy-icon" width="4" height="8">
-                    <use href="./images/sprite.svg#icon-button-arrow">
-                    </use>
-                </svg>
-            </a></button>
     </nav>
-</header>
+</section>
