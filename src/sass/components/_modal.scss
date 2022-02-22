@@ -32,7 +32,7 @@
   overflow: auto;
 
   @include tel {
-    width: 450px;
+    max-width: 450px;
   }
 
   @include tab {
