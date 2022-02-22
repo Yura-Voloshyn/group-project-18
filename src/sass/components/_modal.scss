@@ -59,9 +59,17 @@
   margin: 0;
   display: flex;
   justify-content: center;
+
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     color: $cl-menu-bg;
     background-color: $cl-white-primary;
+
+    transition-property: background-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
