@@ -2,7 +2,7 @@
   padding-top: 39px;
   padding-bottom: 97px;
   background: $cl-section;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 66px;
     padding-bottom: 140px;
   }
@@ -12,8 +12,7 @@
 }
 
 .advantages-list {
-  margin-left: -30px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -24,7 +23,7 @@
   @media screen and (max-width: 767px) {
     max-width: 230px;
   }
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     max-width: 180px;
   }
   @media screen and (min-width: 1280px) {
@@ -32,15 +31,11 @@
   }
 }
 
-.advantages-item {
-  margin-left: 30px;
-}
-
 .advantages-item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 38px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 60px;
   }
   @media screen and (min-width: 1280px) {

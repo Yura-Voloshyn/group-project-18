@@ -62,6 +62,7 @@
     &:focus {
       color: $cl-accent;
       text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
+      outline: none;
     }
   }
 }
@@ -113,6 +114,7 @@
     cursor: pointer;
     background: transparent;
     border: none;
+    outline-color: rgba(212, 20, 67, 0.6);
     z-index: 3;
 
     @media screen and (max-width: 767px) {
@@ -217,11 +219,13 @@
     background-color: $cl-hover-bg2;
     text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
 
   &-link {
     @include font-design(DM Sans, normal, 700, 16px, 1.31, 0.04em);
     color: $cl-accent;
+    outline: none;
   }
 }
 
