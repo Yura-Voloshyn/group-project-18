@@ -28,13 +28,40 @@
     <include src="./partials/customer-reviews.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/modal.html"></include>
+    <include src="./partials/map-modal.html"></include>
+    <include src="./partials/map2-modal.html"></include>
   </main>
   <footer>
     <include src="./partials/footer.html"></include>
   </footer>
   <script src="./index.js"></script>
+
+  <script src="./js/map-modal.js"></script>
   <script src="./js/mobMenu.js"></script>
   <script src="./js/modal.js"></script>
+
+        <script>
+          function myMap() {
+            var mapProp1 = {
+              center: new google.maps.LatLng(41.894535, -87.618595),
+              zoom: 13,
+            };
+              var mapProp2 = {
+              center: new google.maps.LatLng(40.766065, -73.977993),
+              zoom: 13,
+            };
+              var mapProp3 = {
+              center: new google.maps.LatLng(33.763302, -118.163679),
+              zoom: 13,
+            };
+            var map1 = new google.maps.Map(document.getElementById("Chicago"), mapProp1);
+            var map2 = new google.maps.Map(document.getElementById("NewYork"), mapProp2);
+            var map2 = new google.maps.Map(document.getElementById("LosAngeles"), mapProp3);
+          }
+        </script> 
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqa7PWe9IiGogT5fkM6JBnhH4WvWuKnmo&callback=myMap"></script>
+
 </body>
 
 </html>
