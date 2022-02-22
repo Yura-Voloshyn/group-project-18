@@ -198,6 +198,7 @@
 
     @include tab {
       @include font-design(DM Sans, normal, 700, 16px, 1.31);
+      outline: none;
     }
   }
 
@@ -206,6 +207,7 @@
   &:active {
     background-color: $cl-hover-bg2;
     text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
+    outline: none;
   }
 }
 
