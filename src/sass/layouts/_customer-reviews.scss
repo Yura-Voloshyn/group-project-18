@@ -1,10 +1,20 @@
 .reviews {
   padding-bottom: 86px;
+  @include tab {
+    padding-bottom: 119px;
+  }
+  @include pc {
+    padding-bottom: 132px;
+  }
 }
 
+.reviews__container {
+  position: relative;
+}
 .radio-btn {
   position: absolute;
   appearance: none;
+  bottom: 0;
 }
 
 .reviews__slide-wrapper {
