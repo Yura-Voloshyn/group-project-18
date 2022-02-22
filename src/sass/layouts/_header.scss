@@ -19,13 +19,13 @@
   height: 50px;
 
   @media screen and (max-width: 767px) {
-    top: 28px;
+    top: 6px;
     left: 20px;
     transform: translateY(-50%);
   }
   @media screen and (min-width: 768px) {
-    top: 38px;
-    left: 46px;
+    top: 37px;
+    left: 35px;
     transform: translateY(-50%);
   }
 }
