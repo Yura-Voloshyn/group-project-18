@@ -50,12 +50,11 @@
   }
   @include tel {
     width: 450px;
-    height: 610px;
+    height: 570px;
   }
 
   @include tab {
     width: 500px;
-    height: 570px;
   }
 
   @include pc {
