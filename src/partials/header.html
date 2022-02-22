@@ -1,52 +1,33 @@
-<header id="home" class="header">
-    <!-- блок мобільне меню -->
-    <div class="mob-menu is-hidden" data-mobMenu>
-
-        <!-- кнопка закриття меню -->
-        <button type="button" class="mob-menu__close" data-mobMenu-close>
-            <svg width="23" height="23" aria-label="закрити меню">
-                <use class="icon-cross" href="./images/sprite.svg#icon-close-black"></use>
-            </svg>
-        </button>
-        <!-- мобільна-кнопка купити зараз -->
-        <div class="mob-nav">
-            <button class="btn__buy-mob" type="button">
-                <a class="btn__buy-link" href="#">Buy now
-                    <svg class="btn__buy-icon" width="4" height="8">
-                        <use href="./images/sprite.svg#icon-button-arrow">
-                        </use>
-                    </svg>
-                </a>
-            </button>
-            <!-- мобільне меню -->
-            <div>
-                <!--
-                    якоря
-                    id="home"              href="#home"
-                    id="aboutUs"           href="#aboutUs"
-                    id="howIt’sMade"       href="#howIt’sMade"
-                    id="ourProducts"       href="#ourProducts"
-                    id="Contac"            href="#Contac"
-                -->
-                <ul class="mob-nav__list list">
-                    <li class="mob-nav__item">
-                        <a class="link mob-nav__link" href="#home">Home</a>
-                    </li>
-                    <li class="mob-nav__item">
-                        <a class="link mob-nav__link" href="#aboutUs">About us</a>
-                    </li>
-                    <li class="mob-nav__item">
-                        <a class="link mob-nav__link" href="#howIt’sMade">How it’s made?</a>
-                    </li>
-                    <li class="mob-nav__item">
-                        <a class="link mob-nav__link" href="#ourProducts">Our products</a>
-                    </li>
-                    <li class="mob-nav__item">
-                        <a class="link mob-nav__link" href="#contac">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<header class="header">
+  <div class="mob-menu is-hidden" data-mobMenu>
+    <button type="button" class="mob-menu__close" data-mobMenu-close>
+      <svg width="23" height="23" aria-label="закрити меню">
+        <use class="icon-cross" href="./images/sprite.svg#icon-close-black"></use>
+      </svg>
+    </button>
+    <div class="mob-nav">
+      <button class="btn__buy-mob" type="button">
+        <a class="btn__buy-link" href="#">Buy now </a>
+      </button>
+      <div class="menu__block">
+        <ul class="mob-nav__list list">
+          <li class="mob-nav__item">
+            <a class="link mob-nav__link current" href="/">Home</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="link mob-nav__link" href="/">About us</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="link mob-nav__link" href="/">How it’s made?</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="link mob-nav__link" href="/">Our products</a>
+          </li>
+          <li class="mob-nav__item">
+            <a class="link mob-nav__link" href="/">Our products</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- шапка сайту -->
     <div class="container header__section">
@@ -99,6 +80,5 @@
             <div class="stroke2"></div>
             <div class="stroke3"></div>
         </div> -->
-
-    </div>
+  </div>
 </header>
