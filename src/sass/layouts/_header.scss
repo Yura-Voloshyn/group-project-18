@@ -1,5 +1,6 @@
-//===== шапка зайту =====
+//===== шапка cайту =====
 .header__section {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -18,14 +19,22 @@
   height: 50px;
 
   @media screen and (max-width: 767px) {
-    top: 28px;
+    top: 6px;
     left: 20px;
     transform: translateY(-50%);
   }
   @media screen and (min-width: 768px) {
-    top: 60px;
-    left: 46px;
+    top: 37px;
+    left: 35px;
     transform: translateY(-50%);
+  }
+  @media screen and (min-width: 768px) {
+    top: 37px;
+    left: 45px;
+    transform: translateY(-50%);
+  }
+  &:focus {
+    outline: none;
   }
 }
 
@@ -113,11 +122,10 @@
     cursor: pointer;
     background: transparent;
     border: none;
-    outline-color: rgba(212, 20, 67, 0.6);
     z-index: 3;
 
     @media screen and (max-width: 767px) {
-      top: 31px;
+      top: 32px;
       right: 20px;
       transform: translateY(-50%);
     }
@@ -224,7 +232,10 @@
   &-link {
     @include font-design(DM Sans, normal, 700, 16px, 1.31, 0.04em);
     color: $cl-accent;
-    outline: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -260,5 +271,6 @@
     background-color: $cl-hover-bg2;
     text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: rgba(212, 20, 67, 0.6);
   }
 }
