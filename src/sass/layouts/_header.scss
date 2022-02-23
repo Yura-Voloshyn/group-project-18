@@ -33,6 +33,9 @@
     left: 45px;
     transform: translateY(-50%);
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 // === панель навігації ===
@@ -67,6 +70,7 @@
     &:focus {
       color: $cl-accent;
       text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
+      outline: none;
     }
   }
 }
@@ -222,11 +226,16 @@
     background-color: $cl-hover-bg2;
     text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
 
   &-link {
     @include font-design(DM Sans, normal, 700, 16px, 1.31, 0.04em);
     color: $cl-accent;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
@@ -262,5 +271,6 @@
     background-color: $cl-hover-bg2;
     text-shadow: 0px 5px 5px rgba(212, 20, 67, 0.6);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: rgba(212, 20, 67, 0.6);
   }
 }
