@@ -52,7 +52,7 @@
 .page-title {
   width: 218px;
 
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -128,7 +128,7 @@
   width: 62px;
   height: 24px;
 
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 8px;
   line-height: 1.25;
   color: $cl-white-primary;
@@ -193,7 +193,7 @@
   }
 }
 .hero__text {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 8px;
   line-height: 1.5;
   color: $cl-white-primary;
@@ -264,7 +264,7 @@
 .hero__stat-number {
   position: relative;
 
-  font-family: Titan One;
+  font-family: 'Titan One', cursive;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.04em;
@@ -299,7 +299,7 @@
   }
 }
 .hero__stat-text {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
