@@ -82,7 +82,7 @@
       }
     </script>
     <script>
-      function myMap() {
+      window.myMap = function myMap() {
         var mapProp1 = {
           center: new google.maps.LatLng(41.894535, -87.618595),
           zoom: 13,
@@ -98,7 +98,7 @@
         var map1 = new google.maps.Map(document.getElementById('Chicago'), mapProp1);
         var map2 = new google.maps.Map(document.getElementById('NewYork'), mapProp2);
         var map2 = new google.maps.Map(document.getElementById('LosAngeles'), mapProp3);
-      }
+      };
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqa7PWe9IiGogT5fkM6JBnhH4WvWuKnmo&callback=myMap"></script>
   </body>
