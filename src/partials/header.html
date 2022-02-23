@@ -42,19 +42,20 @@
 <!-- шапка зайту -->
 <div class="container header__section">
   <!-- логотип -->
-  <span class="header__logo animate__animated animate__bounceIn">
+  <a href="#" class="header__logo animate__animated animate__bounceIn">
     <picture>
       <source srcset="./images/logo1logo@1x-min.png 1x, ./images/logo1logo@2x-min.png 2x" media="(min-width: 320px)" />
       <img src="./images/logo1logo@1x-min.png" alt="site logo">
     </picture>
-  </span>
+  </a>
   <!-- навігаційна-кнопка купити зараз -->
-  <button class="btn__buy" type="button"><a class="btn__buy-link" href="#">Buy now
+  <button class="btn__buy" type="button">
+    <span class="btn__buy-link" href="#">Buy now
       <svg class="btn__buy-icon" width="4" height="8">
         <use href="./images/sprite.svg#icon-button-arrow">
         </use>
       </svg>
-    </a>
+    </span>
   </button>
   <!-- кнопка відкривання мобільного меню -->
   <button type="button" class="mob-menu__open" data-mobMenu-open>
