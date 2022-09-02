@@ -1,58 +1,53 @@
 # Parcel boilerplate
 
-## Скрытые файлы
+## Вependencies
 
-Включите отображение скрытых файлов и папок в проводнике своей операционной системы, иначе вы не
-сможете выбрать и скопировать себе файлы настроек проекта, имена которых начинаются с точки.
+The computer must be installed LTS-version [Node.js](https://nodejs.org/en/) with all
+additional tools except **Chocolatey** - you don't need to install it.
 
-## Зависимости
+## Before starting work
 
-На компьютере должена быть установлена LTS-версия [Node.js](https://nodejs.org/en/) со всеми
-дополнительными инструментами кроме **Chocolatey** - его ставить не нужно.
-
-## Перед началом работы
-
-Один раз на проект установить все зависимости.
+Install all dependencies once per project.
 
 ```shell
 npm ci
 ```
 
-### Разработка
+### Development
 
-Запустить режим разработки.
+Start development mode.
 
 ```shell
 npm run dev
 ```
 
-Во вкладке браузера перейти по адресу [http://localhost:1234](http://localhost:1234).
+In a browser tab go to [http://localhost:1234](http://localhost:1234).
 
-### Деплой
+### Deploy
 
-Сборка будет автоматически собирать и деплоить продакшен версию проекта на GitHub Pages, в ветку
-`gh-pages`, каждый раз когда обновляется ветка `main`. Например, после прямого пуша или принятого
-пул-реквеста. Для этого необходимо в файле `package.json` отредактировать поле `homepage` и скрипт
-`build`, заменив `имя_пользователя` и `имя_репозитория` на свои.
+The build will automatically build and deploy the production version of the project on GitHub Pages, into the branch
+`gh-pages`, every time the `main` branch is updated. For example, after a direct push or an accepted
+pull request. To do this, you need to edit the `homepage` field and the script in the `package.json` file
+`build`, replacing `username` and `repositoryname` with your own.
 
 ```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория",
+"homepage": "https://user_name.github.io/имя_репозитория",
 "scripts": {
-  "build": "parcel build src/*.html --public-url /имя_репозитория/"
+  "build": "parcel build src/*.html --public-url /repo_name/"
 },
 ```
 
-На всякий случай стоит зайти в настройки репозитория `Settings` > `Pages` и убедиться что продакшен
-версии файлов раздаются из папки `/root` ветки `gh-pages`.
+Just in case, you should go to the `Settings` > `Pages` repository settings and make sure that the production
+file versions are served from the `/root` folder of the `gh-pages` branch.
 
-Через какое-то время живую страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`, например
-[https://goitacademy.github.io/parcel-project-template](https://goitacademy.github.io/parcel-project-template).
+After some time, the live page can be viewed at the address specified in the edited
+property `homepage`, for example
+[https://yura-voloshyn.github.io/group-project-18/](https://yura-voloshyn.github.io/group-project-18/).
 
-## Файлы и папки
+## Files and folders
 
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик просто копирует
-  используемые изображения чтобы не нагружать систему оптимизацией картинок, так как на слабых
-  компьютерах это может занять много времени.
+- All parshas of style files must be in the `src/sass` folder and imported into
+   `src/sass/main.scss`
+- Add images to the `src/images` folder, optimizing them in advance. The assembler just copies
+   used images so as not to load the system with image optimization, as on weak
+   on computers, this can take a long time.
