@@ -31,7 +31,7 @@ pull request. To do this, you need to edit the `homepage` field and the script i
 `build`, replacing `username` and `repositoryname` with your own.
 
 ```json
-"homepage": "https://user_name.github.io/имя_репозитория",
+"homepage": "https://user_name.github.io/repo_name",
 "scripts": {
   "build": "parcel build src/*.html --public-url /repo_name/"
 },
